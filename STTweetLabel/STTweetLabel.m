@@ -476,6 +476,7 @@
         
         _detectionBlock((STTweetHotWord)[[touchedHotword objectForKey:@"hotWord"] intValue], [_cleanText substringWithRange:range], [touchedHotword objectForKey:@"protocol"], range);
     } else {
+        _detectionBlock(STTweetSimpleText, @"", @"", NSMakeRange(0, 0));
         [super touchesEnded:touches withEvent:event];
     }
 }

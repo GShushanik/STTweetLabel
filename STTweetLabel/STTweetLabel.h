@@ -11,7 +11,8 @@
 typedef NS_ENUM(NSInteger, STTweetHotWord) {
     STTweetHandle = 0,
     STTweetHashtag,
-    STTweetLink
+    STTweetLink,
+    STTweetSimpleText
 };
 
 @interface STTweetLabel : UILabel
